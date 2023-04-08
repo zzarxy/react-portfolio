@@ -1,0 +1,95 @@
+.rightElement {
+  width: 270px;
+  margin-right: 20px;
+  font-size: 32px;
+}
+
+.firstBlock pre {
+  font-size: 32px;
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.yelow {
+  color: rgba(255, 255, 0, 0.836);
+}
+
+.blue {
+  color: rgba(64, 113, 247, 0.932);
+}
+
+/* Text animation code */
+.line {
+  max-width: fit-content; /* Fit the width to the content */
+  overflow: hidden; /* Hide overflow */
+  border-right: 0.15em solid transparent; /* Add a cursor-like border */
+}
+
+@keyframes wait {
+  from {
+    width: 0;
+  }
+  to {
+    width: 0;
+  }
+}
+
+/* Define a keyframe animation for typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Define a keyframe animation for blinking effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--purple);
+  }
+}
+
+@keyframes caret {
+  from,
+  to {
+    border-color: var(--purple);
+  }
+  50% {
+    border-color: var(--purple);
+  }
+}
+
+/* Apply the animations to each line with different delays */
+.line1 {
+  animation: wait 1s, typing steps(15, end) 1s, blink-caret 1s 2 alternate,
+    caret 1s 1s;
+}
+
+.line2 {
+  animation: wait 2s, typing 1s steps(9, end) 2s, caret 1s 2s;
+}
+
+.line3 {
+  animation: wait 3s, typing 1s steps(11, end) 3s, caret 1s 3s;
+}
+
+.line4 {
+  animation: wait 4s, typing 1s steps(10, end) 4s, caret 1s 4s;
+}
+
+.line5 {
+  animation: wait 5s, typing 1s steps(12, end) 5s, caret 1s 5s;
+}
+
+.line6 {
+  animation: wait 6s, typing 0.1s steps(1, end) 6s, caret 1s 6s,
+    blink-caret 1s 3 alternate 6s;
+}

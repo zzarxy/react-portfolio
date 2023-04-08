@@ -1,0 +1,191 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes color {
+  to {
+    --cube-color: var(--purple);
+  }
+}
+
+.color-cube {
+  
+  --cube-color: var(--pageBg);
+  position: relative;
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(-40deg);
+  animation: rotateCube 5s linear infinite 8s,
+  color 1s forwards 6.5s;
+}
+
+.cube-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  background-color: var(--cube-color);
+  opacity: 0;
+  transition: 500ms;
+  animation: show 1s forwards 1.5s;
+}
+
+.cube-front {
+  transform: translateZ(70px);
+}
+
+.cube-back {
+  transform: rotateY(180deg) translateZ(70px);
+}
+
+.cube-bottom {
+  transform: rotateX(-90deg) translateZ(70px);
+}
+
+.cube-top {
+  transform: rotateX(90deg) translateZ(70px);
+}
+
+.cube-left {
+  transform: rotateY(-90deg) translateZ(70px);
+}
+
+.cube-right {
+  transform: rotateY(90deg) translateZ(70px);
+}
+
+.color-name {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 55px 0 30px;
+}
+
+.heard-output,
+.confidence-output {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.colors-list {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 2px solid #111;
+  margin-top: 10px;
+}
+
+@keyframes rotateCube {
+  to {
+    transform: rotateX(-20deg) rotateY(-400deg);
+  }
+}
+
+@keyframes position {
+  to {
+    transform: translate3d(35px, 35px, 0px);
+  }
+}
+
+.cube.inner {
+  width: 70px;
+  height: 70px;
+  transform-style: preserve-3d;
+  animation: position 1s forwards 5.5s;
+}
+
+.side {
+  animation: show 1s forwards 3s;
+  opacity: 0;
+}
+
+.cube-front.inner {
+  transform: translateZ(35px);
+}
+
+.cube-back.inner {
+  transform: rotateY(180deg) translateZ(35px);
+}
+
+.cube-bottom.inner {
+  transform: rotateX(-90deg) translateZ(35px);
+}
+
+.cube-top.inner {
+  transform: rotateX(90deg) translateZ(35px);
+}
+
+.cube-left.inner {
+  transform: rotateY(-90deg) translateZ(35px);
+}
+
+.cube-right.inner {
+  transform: rotateY(90deg) translateZ(35px);
+}
+
+/*----------------- Text tuping -----------------*/
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes caret {
+  from,
+  to {
+    border-color: var(--purple);
+  }
+  50% {
+    border-color: var(--purple);
+  }
+}
+
+.line {
+  width: 0;
+  max-width: fit-content; /* Fit the width to the content */
+  overflow: hidden; /* Hide overflow */
+  border-right: 0.15em solid transparent; /* Add a cursor-like border */
+}
+
+.line1 {
+  animation: typing 1s steps(10, end) 1s forwards, caret 1s 1s;
+}
+
+.line2 {
+  animation: typing 1.5s steps(16, end) 2s forwards, caret 1.5s 2s;
+}
+
+.line3 {
+  animation: typing 2s steps(27, end) 3.5s forwards, caret 2s 3.5s;
+}
+
+.line4 {
+  animation: typing 1.5s steps(15, end) 5.5s forwards, caret 1.5s 5.5s;
+}
+
+.line5 {
+  animation: typing 1.5s steps(14, end) 7s forwards, caret 1.5s 7s;
+}

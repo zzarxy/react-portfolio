@@ -1,0 +1,33 @@
+.myBtnPrimary {
+    padding: 8px 16px;
+    background: var(--page-bg);
+    border: 1px solid var(--purple);
+    color: var(--white);
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    transition: 0.2s;
+}
+
+.myBtnPrimary:hover {
+    background: rgba(199, 120, 221, 0.2);
+}
+
+.myBtnSecondary {
+    padding: 8px 16px;
+    background: var(--page-bg);
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    transition: 0.2s;
+}
+
+.myBtnSecondary:hover {
+    background: rgba(171, 178, 191, 0.2);
+}
