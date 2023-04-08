@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.cf25bfe2.css",
+    "main.js": "/react-portfolio/static/js/main.8c2debdf.js",
+    "static/media/Online-zoo.png": "/react-portfolio/static/media/Online-zoo.4f541a0935fbfb1eda95.png",
+    "static/media/roboDraw.gif": "/react-portfolio/static/media/roboDraw.ccba157d672391a87223.gif",
+    "static/media/robo.gif": "/react-portfolio/static/media/robo.2559c9756d53c160ca40.gif",
+    "static/media/songbird.png": "/react-portfolio/static/media/songbird.da8315178c6a70965c0b.png",
+    "static/media/Puzzle.png": "/react-portfolio/static/media/Puzzle.dd620918cb5335a4dea3.png",
+    "static/media/Portfolio.png": "/react-portfolio/static/media/Portfolio.cc6981b935ddf9cfb73a.png",
+    "static/media/logo.png": "/react-portfolio/static/media/logo.88ee50b2d81b63990121.png",
+    "static/media/Vector.svg": "/react-portfolio/static/media/Vector.ba5df866486f5c36bae1.svg",
+    "static/media/Dots.svg": "/react-portfolio/static/media/Dots.283b87154fff638776dd.svg",
+    "index.html": "/react-portfolio/index.html",
+    "static/media/Rectangle.svg": "/react-portfolio/static/media/Rectangle.d1cbb6938bf2182f7c22.svg",
+    "main.cf25bfe2.css.map": "/react-portfolio/static/css/main.cf25bfe2.css.map",
+    "main.8c2debdf.js.map": "/react-portfolio/static/js/main.8c2debdf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf25bfe2.css",
+    "static/js/main.8c2debdf.js"
+  ]
+}
