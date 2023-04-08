@@ -13,7 +13,7 @@ import Burger from "./components/burger/Burger";
 function App() {
   return (
     <div className="App min-h-[100vh] flex flex-col justify-between">
-      <Router >
+      <Router basename="/react-portfolio">
         <Navbar />
         <Burger />
         <Routes>
