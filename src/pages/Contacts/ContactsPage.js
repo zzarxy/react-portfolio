@@ -59,7 +59,7 @@ const ContactsPage = () => {
                     <span className='text-purple'>/</span>
                     contacts
                 </Title>
-                <p className='mt-4'>How you cant contact me?</p>
+                <p className='mt-4'>How can you contact me?</p>
                 <div className='mt-[45px] mb-[145px] flex justify-between flex-wrap gap-4'>
                     <p className='max-w-[500px] text-gray'>
                         I’m interested in the job offer.
